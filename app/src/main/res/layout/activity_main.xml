@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Calculator"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="212dp"
+        android:text="Calculator"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,SpUsage,UnknownId" />
+
+    <Button
+        android:id="@+id/Memo"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/memo"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="4dp"
+        android:text="Menu"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="481dp"
+        android:layout_height="818dp"
+        android:background="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-20dp" />
+
+    <VideoView
+        android:id="@+id/intro"
+        android:layout_width="375dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calculator" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
